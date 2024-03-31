@@ -1,0 +1,16 @@
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\bin\Debug\MVVM.exe.config
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\bin\Debug\MVVM.exe
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\bin\Debug\MVVM.pdb
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\MVVM.csproj.AssemblyReference.cache
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\App.g.cs
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\MVVM_MarkupCompile.cache
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\MVVM_MarkupCompile.lref
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\MVVM.g.resources
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\MVVM.Properties.Resources.resources
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\MVVM.csproj.GenerateResource.cache
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\MVVM.csproj.CoreCompileInputs.cache
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\MVVM.exe
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\MVVM.pdb
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\View\RegistrationWindow.g.cs
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\View\RegistrationWindow.baml
+C:\Users\Олег\Desktop\Тестовое\MVVM_project\MVVM\MVVM\obj\Debug\App.baml

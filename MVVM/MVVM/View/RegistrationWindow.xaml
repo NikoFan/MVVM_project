@@ -1,0 +1,88 @@
+﻿<Window
+    x:Class="MVVM.View.RegistrationWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:MVVM.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Name="Reg"
+    Title="RegistrationWindow"
+    Width="800"
+    Height="500"
+    MinWidth="800"
+    MinHeight="450"
+    mc:Ignorable="d">
+
+
+    <Grid Background="Pink">
+        <Grid.ColumnDefinitions>
+
+
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="200" />
+        </Grid.ColumnDefinitions>
+
+
+        <Grid Grid.Column="0" Margin="20">
+            <Border Style="{StaticResource The_style_for_entering_data_in_the_registration_window}">
+                <WrapPanel
+                    Margin="5"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Orientation="Vertical">
+                    <Border x:Name="NameRegistrationPlace" Style="{StaticResource The style for the text input area}">
+                        <Grid>
+                            <TextBox
+                                x:Name="CustomerNameInput"
+                                Style="{StaticResource Style for text input}"
+                                Text="Ввод" />
+                            <TextBlock Style="{StaticResource Style for the hint text}" Text="Введите имя" />
+
+                        </Grid>
+                    </Border>
+                    <Border x:Name="Name2RegistrationPlace" Style="{StaticResource The style for the text input area}" />
+
+                    <Border x:Name="MailRegistrationPlace" Style="{StaticResource The style for the text input area}">
+                        <Grid>
+                            <TextBlock Style="{StaticResource Style for the hint text}" Text="Введите почту" />
+                            <TextBox
+                                x:Name="CustomerMailInput"
+                                Style="{StaticResource Style for text input}"
+                                Text="Ввод" />
+
+                        </Grid>
+                    </Border>
+
+                    <Border x:Name="PasswordRegistrationPlace" Style="{StaticResource The style for the text input area}">
+                        <Grid>
+                            <TextBlock Style="{StaticResource Style for the hint text}" Text="Введите пароль" />
+                            <PasswordBox
+                                x:Name="CustomerPasswordInput"
+                                Password="Ввод"
+                                Style="{StaticResource Style for password input}" />
+
+                        </Grid>
+                    </Border>
+
+                    <Border x:Name="RegistartionButton" Style="{StaticResource The style for the registration button}">
+                        <TextBlock Style="{StaticResource Style for text in buttons}" Text="Регистрация" />
+                    </Border>
+
+
+                </WrapPanel>
+            </Border>
+
+
+
+
+        </Grid>
+
+        <Border
+            Grid.Column="1"
+            Margin="0,5,0,5"
+            Background="Purple"
+            CornerRadius="20 0 0 20" />
+    </Grid>
+
+
+</Window>
