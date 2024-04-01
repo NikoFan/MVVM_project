@@ -32,15 +32,19 @@
                     Orientation="Vertical">
                     <Border x:Name="NameRegistrationPlace" Style="{StaticResource The style for the text input area}">
                         <Grid>
+
+
+                            <TextBlock
+                                x:Name="UserNameInputHint"
+                                Style="{StaticResource Style for the hint text}"
+                                Text="Введите имя" />
                             <TextBox
                                 x:Name="CustomerNameInput"
                                 Style="{StaticResource Style for text input}"
                                 Text="Ввод" />
-                            <TextBlock Style="{StaticResource Style for the hint text}" Text="Введите имя" />
 
                         </Grid>
                     </Border>
-                    <Border x:Name="Name2RegistrationPlace" Style="{StaticResource The style for the text input area}" />
 
                     <Border x:Name="MailRegistrationPlace" Style="{StaticResource The style for the text input area}">
                         <Grid>
@@ -79,9 +83,14 @@
 
         <Border
             Grid.Column="1"
-            Margin="0,5,0,5"
-            Background="Purple"
-            CornerRadius="20 0 0 20" />
+            Style="{StaticResource The style for the side area of the window changer}">
+            <Grid>
+                <TextBlock Style="{StaticResource Style for informational text}" Text="Если у вас создан аккаунт - Войдите в него" />
+                <Border Style="{StaticResource The style for the switch windows button}">
+                    <TextBlock Style="{StaticResource Style for text in buttons}" Text="Войти" />
+                </Border>
+            </Grid>
+        </Border>
     </Grid>
 
 

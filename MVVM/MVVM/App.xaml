@@ -18,7 +18,7 @@
         <Style x:Key="The style for the text input area" TargetType="Border">
             <Setter Property="Height" Value="70" />
             <Setter Property="Width" Value="400" />
-            <Setter Property="Margin" Value="0,10,0,0" />
+            <Setter Property="Margin" Value="10,10,10,10" />
             <Setter Property="CornerRadius" Value="20" />
             <Setter Property="Background" Value="#4A1F7F" />
             <Style.Triggers>
@@ -63,10 +63,158 @@
         <Style x:Key="The style for the registration button" TargetType="Border">
             <Setter Property="Height" Value="50" />
             <Setter Property="Width" Value="150" />
+            <Setter Property="Cursor" Value="Hand" />
             <Setter Property="CornerRadius" Value="10" />
             <Setter Property="Margin" Value="0,10,0,0" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="Background" Value="#241F7F" />
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Border.MouseLeave">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    AutoReverse="False"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    From="#331952"
+                                    To="#241F7F"
+                                    Duration="0:0:0.5" />
+
+
+                            </Storyboard>
+
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Border.MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    AutoReverse="False"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    From="#241F7F"
+                                    To="#331952"
+                                    Duration="0:0:0.5" />
+
+
+                            </Storyboard>
+
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Border.MouseDown">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    AutoReverse="False"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    From="#241F7F"
+                                    To="#501952" />
+
+
+                            </Storyboard>
+
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Border.MouseUp">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    AutoReverse="False"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    From="#501952"
+                                    To="#241F7F" />
+
+
+                            </Storyboard>
+
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Style.Triggers>
+
+        </Style>
+
+        <Style x:Key="The style for the switch windows button" TargetType="Border">
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="150" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="Margin" Value="0,100,0,0" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Background" Value="Green" />
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Border.MouseLeave">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    AutoReverse="False"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    From="DarkGreen"
+                                    To="Green"
+                                    Duration="0:0:0.5" />
+
+
+                            </Storyboard>
+
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Border.MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    AutoReverse="False"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    From="Green"
+                                    To="DarkGreen"
+                                    Duration="0:0:0.5" />
+
+
+                            </Storyboard>
+
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Border.MouseDown">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    AutoReverse="False"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    From="Green"
+                                    To="ForestGreen" />
+
+
+                            </Storyboard>
+
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Border.MouseUp">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    AutoReverse="False"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    From="ForestGreen"
+                                    To="Green" />
+
+
+                            </Storyboard>
+
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Style.Triggers>
 
 
         </Style>
@@ -86,54 +234,6 @@
             <Setter Property="TextWrapping" Value="Wrap" />
             <Setter Property="Padding" Value="0,20,0,0" />
             <Setter Property="TextAlignment" Value="Center" />
-            <Style.Triggers>
-                <EventTrigger RoutedEvent="TextBlock.MouseLeave">
-                    <EventTrigger.Actions>
-                        <BeginStoryboard>
-                            <Storyboard TargetProperty="Opacity">
-
-                                <DoubleAnimationUsingPath Source="X" Duration="0:0:0.5">
-                                    <DoubleAnimationUsingPath.PathGeometry>
-                                        <PathGeometry>
-                                            <PathGeometry.Figures>
-                                                <PathFigure StartPoint="0 0">
-                                                    <LineSegment Point="0 0" />
-                                                    <LineSegment Point="1 1" />
-                                                    <LineSegment Point="2 2" />
-                                                </PathFigure>
-                                            </PathGeometry.Figures>
-                                        </PathGeometry>
-                                    </DoubleAnimationUsingPath.PathGeometry>
-                                </DoubleAnimationUsingPath>
-                            </Storyboard>
-
-                        </BeginStoryboard>
-                    </EventTrigger.Actions>
-                </EventTrigger>
-                <EventTrigger RoutedEvent="TextBlock.MouseEnter">
-                    <EventTrigger.Actions>
-                        <BeginStoryboard>
-                            <Storyboard TargetProperty="Opacity">
-
-                                <DoubleAnimationUsingPath Source="Y" Duration="0:0:0.5">
-                                    <DoubleAnimationUsingPath.PathGeometry>
-                                        <PathGeometry>
-                                            <PathGeometry.Figures>
-                                                <PathFigure StartPoint="2 2">
-                                                    <LineSegment Point="2 2" />
-                                                    <LineSegment Point="1 0" />
-                                                    <LineSegment Point="0 0" />
-                                                </PathFigure>
-                                            </PathGeometry.Figures>
-                                        </PathGeometry>
-                                    </DoubleAnimationUsingPath.PathGeometry>
-                                </DoubleAnimationUsingPath>
-                            </Storyboard>
-
-                        </BeginStoryboard>
-                    </EventTrigger.Actions>
-                </EventTrigger>
-            </Style.Triggers>
 
         </Style>
 
@@ -145,6 +245,20 @@
             <Setter Property="BorderBrush" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0" />
             <Setter Property="Background" Value="Transparent" />
+
+        </Style>
+
+
+        <Style x:Key="Style for informational text" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="Padding" Value="5,0,5,50" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="Background" Value="Transparent" />
+
         </Style>
 
         <Style x:Key="Style for password input" TargetType="PasswordBox">
@@ -157,6 +271,49 @@
             <Setter Property="BorderBrush" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0" />
             <Setter Property="Background" Value="Transparent" />
+        </Style>
+
+        <Style x:Key="The style for the side area of the window changer" TargetType="Border">
+            <Setter Property="CornerRadius" Value="20 0 0 20" />
+            <Setter Property="Margin" Value="0,5,0,5" />
+            <Setter Property="Background" Value="Purple" />
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Border.MouseLeave">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    AutoReverse="False"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    From="#A06BB3"
+                                    To="Purple"
+                                    Duration="0:0:0.5" />
+
+
+                            </Storyboard>
+
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+
+                <EventTrigger RoutedEvent="Border.MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <ColorAnimation
+                                    AutoReverse="False"
+                                    Storyboard.TargetProperty="Background.Color"
+                                    From="Purple"
+                                    To="#A06BB3"
+                                    Duration="0:0:0.5" />
+
+
+                            </Storyboard>
+
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Style.Triggers>
         </Style>
 
 
